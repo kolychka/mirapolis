@@ -1,0 +1,45 @@
+.content {
+    margin: 50px;
+    border: 1px solid lightblue;
+}
+
+.tree {
+    list-style: none;
+    position: relative;
+}
+
+.tree_branch {
+    width: fit-content;
+}
+.tree_branch__closed .tree_branch-status {
+    background: url('./images/plus.gif') no-repeat left,
+        url('./images/folder-closed.gif') no-repeat 15px;
+}
+
+.tree_branch__closed .tree {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.tree_branch__blocked .tree_branch-status {
+    width: 20px;
+    background: url('./images/folder-closed.gif') no-repeat;
+}
+
+.tree_branch-name {
+    display: inline-block;
+}
+
+.tree_branch-status {
+    display: inline-block;
+    width: 40px;
+    height: 15px;
+    background: url('./images/minus.gif') no-repeat left,
+        url('./images/folder.gif') no-repeat 15px;
+}
+
+.tree_list {
+    width: fit-content;
+    list-style: url('./images/file.gif');
+}
